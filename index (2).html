@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Selectores CSS</title>
+    <style>
+        /* Selector de etiqueta */
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        /* Selector de clase */
+        .resaltado {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        /* Selector de ID */
+        #importante {
+            color: red;
+            font-size: 20px;
+        }
+
+        /* Selector de elemento dentro de otro */
+        p span {
+            color: green;
+            font-style: italic;
+        }
+
+        /* Pseudo-clase */
+        a:hover {
+            color: orange;
+            text-decoration: underline;
+        }
+
+        /* Selector de atributo */
+        input[type="text"] {
+            border: 2px solid blue;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de Selectores CSS</h1>
+
+    <p class="resaltado">Este párrafo está resaltado usando una clase.</p>
+
+    <p id="importante">Este párrafo es importante usando un ID.</p>
+
+    <p>Este párrafo tiene un <span>texto en verde e italic</span> usando selector de hijo.</p>
+
+    <p>Visita <a href="#">este enlace</a> y pasa el mouse sobre él para ver el efecto hover.</p>
+
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad"><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
